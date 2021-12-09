@@ -7,7 +7,7 @@ class CreateFriendshipRequests < ActiveRecord::Migration[5.2]
       t.integer :friend_id, null: false
       t.timestamps
     end
-    add_foreign_key "friendship_requests", "users", column: "user_id"
-    add_foreign_key "friendship_requests", "users", column: "friend_id"
+    add_foreign_key 'friendship_requests', 'users', column: 'user_id'
+    add_foreign_key 'friendship_requests', 'users', column: 'friend_id'
   end
 end
